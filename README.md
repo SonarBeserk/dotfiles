@@ -2,11 +2,11 @@
 
 My first attempt at creating common files for my systems. Only Linux is supported at this time. If I ever setup Windows the same way or get a Mac I will make some adjustments.
 
-## Recommended Extensions (VSCode)
+## Recommended Development Extensions (VSCode)
 
-* Markdown All in One
-* Markdownlint
-* ShellCheck
+* Markdown All in One - Provides table of contents and formatting functionality
+* Markdownlint - Provides linting of markdown files
+* ShellCheck - Provides linting of script files
 
 ## Setup Script
 
