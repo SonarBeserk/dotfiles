@@ -6,3 +6,12 @@ My first attempt at creating common files for my systems. Only Linux is supporte
 
 * Markdown All in One
 * Markdownlint
+* ShellCheck
+
+## Setup Script
+
+To install these files you need to run the `setup.sh` script. This file by default will not be executable, which can be fixed by running ``chmod +x setup.sh`.
+
+## Uninstall Script
+
+TODO
