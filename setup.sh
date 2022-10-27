@@ -18,16 +18,23 @@ echo -n "Creating backup directory"
 mkdir -p $backupdir
 echo "...done"
 
-echo "Building list of dotfiles"
+echo -n "Building list of dotfiles"
 for file in "$dir"/*
 do
-    dotfiles+=( "$(basename "$file")" )
+    if [ ! -d "$file" ];
+    then
+        dotfiles+=( "$(basename "$file")" )
+    fi
 done
+echo "..."
 
 echo "Moving existing files to backup directory"
 for file in "$HOME"/*
 do
-    echo basename "$file"
+    name=$(basename "$file")
+    if [[ ${dotfiles[*]} == *"$name"* ]]; then
+        echo $file
+    fi
 done
 
 echo "...done"
