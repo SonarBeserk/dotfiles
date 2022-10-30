@@ -21,9 +21,12 @@ echo "...done"
 echo -n "Building list of dotfiles"
 for file in "$dir"/*
 do
-    if [ ! -d "$file" ];
+    name=$(basename "$file")
+
+    # Ignore directories, files with extensions, and dotfiles
+    if [ ! -d "$file" ] && [[ $name != *\.* ]];
     then
-        dotfiles+=( "$(basename "$file")" )
+        dotfiles+=( \."$(basename "$file")" )
     fi
 done
 echo "..."
