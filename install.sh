@@ -10,6 +10,9 @@ echo "Updating apt repos and checking for upgrades"
 sudo apt update
 sudo apt upgrade
 
+echo "Install libnotify-bin for alert alias"
+sudo apt install libnotify-bin
+
 echo "Installing git / Golang"
 sudo apt install git git-gui
 sudo apt install golang

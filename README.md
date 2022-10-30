@@ -22,11 +22,12 @@ TODO
 
 ## Bash Aliases
 
-| Alias | Description                                              |
-| ----- | -------------------------------------------------------- |
-| ll    | Lists all files in long mode with type symbol at the end |
-| la    | Lists all files but `.` and `..` implied directories     |
-| l     | Basic ls command with type symbol at the end             |
+| Alias | Description                                                                                                    | Usage          |
+| ----- | -------------------------------------------------------------------------------------------------------------- | -------------- |
+| ll    | Lists all files in long mode with type symbol at the end                                                       | ll             |
+| la    | Lists all files but `.` and `..` implied directories                                                           | la             |
+| l     | Basic ls command with type symbol at the end                                                                   | l              |
+| alert | Meant for long running commands to send a notification and play a sound when complete (Requires libnotify-bin) | sleep 5; alert |
 
 ## Preconfigured Programs
 
