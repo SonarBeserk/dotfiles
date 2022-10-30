@@ -26,9 +26,10 @@ TODO
 
 ## Preconfigured Programs
 
-* Bash
-* Go
-* Starship
+* [Bash](https://www.gnu.org/software/bash/)
+* [Git](https://git-scm.com/)
+* [Go](https://go.dev/)
+* [Starship](https://starship.rs/)
 
 ## Tested Operating Systems
 
