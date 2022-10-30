@@ -29,15 +29,25 @@ do
         dotfiles+=( \."$(basename "$file")" )
     fi
 done
-echo "..."
+echo "...done"
 
-echo "Moving existing files to backup directory"
+echo "Moving existing files to $backupdir"
 for file in "$HOME"/*
 do
     name=$(basename "$file")
     if [[ ${dotfiles[*]} == *"$name"* ]]; then
-        echo $file
+        echo -n "Moving file $name: "
+        mv -n "$file" "$backupdir/$name"
+        if [ ! -f "$file" ]; then
+            echo "...done"
+        else
+            echo "Failed to move file"
+            exit 
+        fi
+
+        cleanedName="${name:1}"
+        ln -s $dir/"$cleanedName" ~/"$name"
     fi
 done
 
-echo "...done"
+echo "File moves done"
