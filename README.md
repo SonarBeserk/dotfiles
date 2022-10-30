@@ -15,3 +15,21 @@ To install these files you need to run the `setup.sh` script. This file by defau
 ## Uninstall Script
 
 TODO
+
+## Bash Aliases
+
+| Alias | Description                                              |
+| ----- | -------------------------------------------------------- |
+| ll    | Lists all files in long mode with type symbol at the end |
+| la    | Lists all files but `.` and `..` implied directories     |
+| l     | Basic ls command with type symbol at the end             |
+
+## Preconfigured Programs
+
+* Bash
+* Go
+* Starship
+
+## Tested Operating Systems
+
+* Pop!_OS 22.04
