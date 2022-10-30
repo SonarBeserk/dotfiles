@@ -12,6 +12,10 @@ My first attempt at creating common files for my systems. Only Linux is supporte
 
 To install these files you need to run the `setup.sh` script. This file by default will not be executable, which can be fixed by running ``chmod +x setup.sh`.
 
+## Install Script
+
+This script will install the programs listed as preconfigured such as git, golang, and starship. The next time a terminal window is opened they will be preconfigured.
+
 ## Uninstall Script
 
 TODO
