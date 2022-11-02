@@ -1,0 +1,14 @@
+[init]
+	defaultBranch = main # Set Default Branch to main instead of master
+[push]
+	default = current # Only push the current branch by default
+[pull]
+	rebase = true # Automatically rebase branches when pulling
+[rebase]
+	autoStash = true # Automatically stash when rebasing
+[diff]
+	colorMoved = zebra # Color moved lines differently than new / deleted lines
+[merge]
+	conflictStyle=zdiff3 # Switch conflict style to newer zelous diff3 algo
+[alias]
+	modsync="!f(){ git submodule update --init --recursive; }; f" # Alias to init / sync project submodules
