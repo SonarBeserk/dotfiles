@@ -5,7 +5,6 @@
 # This script saves a copy of any files with the same name as repo files and symlinks the replacements.
 ##################
 
-dir=~/dotfiles
 backupdir=~/dotfiles_old
 dotfiles=()
 
@@ -19,7 +18,7 @@ mkdir -p $backupdir
 echo "...done"
 
 echo -n "Building list of dotfiles"
-for file in "$dir"/*
+for file in "$(pwd)"/*
 do
     name=$(basename "$file")
 
@@ -46,7 +45,7 @@ do
         fi
 
         cleanedName="${name:1}"
-        ln -s $dir/"$cleanedName" ~/"$name"
+        ln -s "$(pwd)"/"$cleanedName" ~/"$name"
     fi
 done
 
