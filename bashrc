@@ -128,3 +128,8 @@ fi
 if [ -x "$(command -v starship)" ]; then
   eval "$(starship init bash)"
 fi
+
+if [ -e ~/.check-backups ] && [ ! -d ~/timemachine ];
+then
+    echo -e "$(tput setaf 1)Timemachine backups folder in .bashrc could not be found! Fix this immediately!$(tput sgr 0)"
+fi
