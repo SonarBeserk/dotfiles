@@ -44,8 +44,8 @@ while true; do
             sudo make install
             echo "Creating backups marker"
             touch ~/.check-backups
-            echo "Please create the appropriate cron rule based on the following example rule:"
-            echo "0 2 * * * if [[ -e /backup/mounted ]]; then /usr/local/bin/timemachine /home/someuser /backup; fi"
+            echo "Please create the appropriate cron rule for backups similar to the following rule:"
+            echo "0 */8 * * * if [[ -e /timemachine ]]; then /usr/local/bin/timemachine ~ /timemachine; fi"
             break;
             ;;
 
