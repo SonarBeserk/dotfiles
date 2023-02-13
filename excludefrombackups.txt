@@ -1,0 +1,15 @@
+[$USER]/.dbus
+*.sock
+/Trash/
+/.Trash/
+[$USER]/.cache/
+**/*cache/
+**/*Cache/
+**/*CACHE/
+lost+found
+[$USER]/.AppleDB/
+[$USER]/.AppleDesktop/
+**/.AppleDouble/
+[$USER]/Network\ Trash\ Folder/
+/Temporary\ Items/
+.DS_Store
